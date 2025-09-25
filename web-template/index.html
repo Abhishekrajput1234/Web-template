@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+     rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" >
+        
+    </script>
+    <style>
+      body{
+        height: 100%;
+      }
+        .ml-top{
+            margin-left:auto!important;
+            
+        }
+
+        .mynav .nav-link{
+            color:white;
+            text-transform: uppercase;
+            padding:0 15px !important;
+        }
+
+        .banner{
+          min-height:100vh;
+          background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(pics/pic1.jpg);
+          background:cover;
+          position: relative;
+        }
+
+        .bg-darks{
+          background: rgba(0,0,0,.5);
+        }
+        .mid{
+          position: absolute;
+          margin-top: 200px;
+          color:white;
+        }
+
+        .txt1{
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 1pt;
+        }
+        .txt2{
+          font-size: 4rem;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .header{
+          font-size: 2.5rem;
+          font-weight: bold;
+        }
+
+        .circle{
+          width:80px;
+          height:80px;
+          background:white;
+          border-radius: 50px;
+          margin-top: -60px;
+          border:2px solid #e6e0e0;
+        }
+
+        .feedback{
+          background: linear-gradient(rgba(1,1,1,.6),rgba(1,1,1,.6)),url(pics/feed.jpg);
+          background-size:cover;
+          padding:4rem 0;
+        
+        }
+
+        .mt{
+          font-weight: bold;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <!-----header section----------------->
+   <nav class="navbar navbar-expand-sm bg-darks navbar-dark px-5 py-2 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Techvidya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-top mynav">
+      
+        <li class="nav-item topnav">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">About</a>
+        </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Course</a>
+          <div class="dropdown-menu">
+            <a href="" class="dropdown-item">HTML</a>
+              <a href="" class="dropdown-item">css</a>
+                <a href="" class="dropdown-item">javascript</a>
+                  <a href="" class="dropdown-item">React</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+   
+
+  </div>
+</nav>
+
+
+    <!-----header section----------------->
+
+    <!----banner section----------------->
+
+    <div class="container-fuild banner">
+      <div class="container  mid ">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="txt1">best education hub</div>
+          <div class="txt2">you can <span class="text-danger">learn every thing</span></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptas et Lorem ipsum do
+            quod? Iusto iste atque corrupti?</p>
+
+            <button class="btn btn-primary px-4 py-2">Read More</button>
+      </div>
+      </div>
+    </div>
+    </div>
+
+
+
+      <!----banner section----------------->
+
+  <!------course section--------------->
+
+  <div class="container p-5 ">
+    <div class="header text-center"><span class="text-danger">Course</span><span class="text-secondry"> Category</span>
+
+  </div><!----heading---------->
+
+  <div class="row mt-5">
+<div class="col-md-4 ">
+      <div class="card">
+        
+        <div class="card-body bg-light text-center">
+          <div class="row justify-content-center">
+          <div class="circle"></div>
+        </div>
+      <h3 class="mt-4">Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur  iure. Reprehenderit
+         consequatur ipsa beatae omnis </p>
+    </div>
+  </div>
+  </div><!-----col-md-4------->
+
+  <div class="col-md-4 ">
+      <div class="card">
+        
+        <div class="card-body bg-light text-center">
+          <div class="row justify-content-center">
+          <div class="circle"></div>
+        </div>
+      <h3 class="mt-4">Pages</h3>
+      <p>Lorem ipsum dolor sit amet consectetur  iure. Reprehenderit
+         consequatur ipsa beatae omnis </p>
+    </div>
+  </div>
+  </div><!-----col-md-4------->
+
+  <div class="col-md-4 ">
+      <div class="card">
+        
+        <div class="card-body bg-light text-center">
+          <div class="row justify-content-center">
+          <div class="circle"></div>
+        </div>
+      <h3 class="mt-4">Event</h3>
+      <p>Lorem ipsum dolor sit amet consectetur  iure. Reprehenderit
+         consequatur ipsa beatae omnis </p>
+    </div>
+  </div>
+  </div><!-----col-md-4------->
+
+
+</div><!------row----------->
+
+<div class="row mt-5">
+<div class="col-md-4 mt-4">
+      <div class="card">
+        
+        <div class="card-body bg-light text-center">
+          <div class="row justify-content-center">
+          <div class="circle"></div>
+        </div>
+      <h3 class="mt-4">Course</h3>
+      <p>Lorem ipsum dolor sit amet consectetur  iure. Reprehenderit
+         consequatur ipsa beatae omnis </p>
+    </div>
+  </div>
+  </div><!-----col-md-4------->
+
+  <div class="col-md-4 mt-4">
+      <div class="card">
+        
+        <div class="card-body bg-light text-center">
+          <div class="row justify-content-center">
+          <div class="circle"></div>
+        </div>
+      <h3 class="mt-4">ILETS</h3>
+      <p>Lorem ipsum dolor sit amet consectetur  iure. Reprehenderit
+         consequatur ipsa beatae omnis </p>
+    </div>
+  </div>
+  </div><!-----col-md-4------->
+
+  <div class="col-md-4  mt-4">
+      <div class="card">
+        
+        <div class="card-body bg-light text-center">
+          <div class="row justify-content-center">
+          <div class="circle"></div>
+        </div>
+      <h3 class="mt-4">Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur  iure. Reprehenderit
+         consequatur ipsa beatae omnis </p>
+    </div>
+  </div>
+  </div><!-----col-md-4------->
+
+
+</div><!------row----------->
+  
+</div><!------course section--------------->
+
+<!--feedback-------------------->
+<div class="container-fuild feedback">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-center text-white">
+        <div class="row justify-content-center">
+          <div class="circle mt-5"></div>
+          <div class="header mt-3">
+            75
+          </div>
+          <p>PROJECT COMPLETED</p>
+        </div>
+        
+      </div><!------col-md-3--------->
+
+       
+      <div class="col-md-3 text-center text-white">
+        <div class="row justify-content-center">
+          <div class="circle mt-5"></div>
+          <div class="header mt-3">
+            75
+          </div>
+          <p>PROJECT COMPLETED</p>
+        </div>
+        
+      </div><!------col-md-3--------->
+
+       
+      <div class="col-md-3 text-center text-white">
+        <div class="row justify-content-center">
+          <div class="circle mt-5"></div>
+          <div class="header mt-3">
+            75
+          </div>
+          <p>PROJECT COMPLETED</p>
+        </div>
+        
+      </div><!------col-md-3--------->
+
+       
+      <div class="col-md-3 text-center text-white">
+        <div class="row justify-content-center">
+          <div class="circle mt-5"></div>
+          <div class="header mt-3">
+            75
+          </div>
+          <p>PROJECT COMPLETED</p>
+        </div>
+        
+      </div><!------col-md-3--------->
+      
+
+    </div>
+  </div>
+</div>
+
+<!--feedback-------------------->
+
+<!---course---------------------->
+
+<div class="container-fuild  p-5 bg-light">
+  <div class="row ">
+    <div class="col-md-9">
+      <h2><span class="text-danger">Popular</span> <span class="text-secondry"> Courses </span></h2>
+    </div>
+    <div class="col-md-3 text-end">
+      <h5> <span class="text-danger">More></span></h5>
+    </div>
+  </div><!--row-------->
+
+  <div class="row mt-4 ">
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body p-0">
+          <img src="pics/student pic 1.jpg" alt="" width="100%">
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>classes</p>
+            </div>
+            <div class="col-md-6">
+              10am - 11am
+            </div>
+          </div>
+          <h2>philosopphy</h2>
+          <p>Lorem ipsum dolor sit amet consecteturni dolores magnam  repudiandae iste.</p>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p><span class="text-danger">$20.00</span></p>
+            </div>
+
+            <div class="col-md-6 text-end">
+              <p><span class="text-secondry ">200</span></p>
+            </div>
+          </div>
+
+
+          
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body p-0">
+          <img src="pics/student pic 1.jpg" alt="" width="100%">
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>classes</p>
+            </div>
+            <div class="col-md-6">
+              10am - 11am
+            </div>
+          </div>
+          <h2>ILETS</h2>
+          <p>Lorem ipsum dolor sit amet consecteturni dolores magnam  repudiandae iste.</p>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p><span class="text-danger">$20.00</span></p>
+            </div>
+
+            <div class="col-md-6 text-end">
+              <p><span class="text-secondry ">200</span></p>
+            </div>
+          </div>
+
+
+          
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body p-0">
+          <img src="pics/student pic 1.jpg" alt="" width="100%">
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>classes</p>
+            </div>
+            <div class="col-md-6">
+              10am - 11am
+            </div>
+          </div>
+          <h2>Regular MBA</h2>
+          <p>Lorem ipsum dolor sit amet consecteturni dolores magnam  repudiandae iste.</p>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p><span class="text-danger">$20.00</span></p>
+            </div>
+
+            <div class="col-md-6 text-end">
+              <p><span class="text-secondry ">200</span></p>
+            </div>
+          </div>
+
+
+          
+        </div>
+
+      </div>
+    </div>
+
+    
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body p-0">
+          <img src="pics/student pic 1.jpg" alt="" width="100%">
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <p>classes</p>
+            </div>
+            <div class="col-md-6">
+              10am - 11am
+            </div>
+          </div>
+          <h2>GMAT</h2>
+          <p>Lorem ipsum dolor sit amet consecteturni dolores magnam  repudiandae iste.</p>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p><span class="text-danger">$20.00</span></p>
+            </div>
+
+            <div class="col-md-6 text-end">
+              <p><span class="text-secondry ">200</span></p>
+            </div>
+          </div>
+
+
+          
+        </div>
+
+      </div>
+    </div>
+
+  </div><!---row---------->
+
+   </div>
+<!---course---------------------->
+
+    
+  </body>
+</html>
